@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    public class LinkedList<T> : IEnumerable<T>, IEnumerable
+    public class LinkedList<T> : IEnumerable<T>
     {
         #region Fields
         public LinkedListNode<T> head;
@@ -56,7 +56,7 @@ namespace LinkedList
                         if (head == null)
                             tail = null;
                     }
-                    Count++;
+                    Count--;
                     return true;
                 }
                 previous = current;
